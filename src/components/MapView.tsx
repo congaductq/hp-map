@@ -1,8 +1,9 @@
-import { Map, useMap } from "@vis.gl/react-google-maps";
+import { Map, useMap, AdvancedMarker } from "@vis.gl/react-google-maps";
 import { useEffect, useRef } from "react";
-import type { Selection, RingRoad } from "../types";
+import type { Selection, RingRoad, MarkerData } from "../types";
 import { Legend } from "./Legend";
 import ringRoadsData from "../data/ringRoads.json";
+import markersData from "../data/markers.json";
 
 const HP_CENTER = { lat: 20.8449, lng: 106.6881 };
 const DEFAULT_ZOOM = 12;
@@ -112,6 +113,13 @@ export function MapView({ selection, onSelect }: Props) {
         onClick={handleMapClick}
         style={{ width: "100%", height: "100%" }}
       />
+      {(markersData as MarkerData[]).map((marker) => (
+        <AdvancedMarker
+          key={marker.id}
+          position={marker.position}
+          onClick={() => onSelect({ type: "marker", markerId: marker.id })}
+        />
+      ))}
       <Legend />
     </>
   );
