@@ -58,6 +58,11 @@
   color: #64748b;
 }
 
+.status-badge.under_construction {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
 .back-button {
   background: none;
   border: none;

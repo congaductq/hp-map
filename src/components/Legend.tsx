@@ -31,7 +31,7 @@ export function Legend() {
         />
         <span style={{ color: "#555" }}>In Progress</span>
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
         <div
           style={{
             width: 24,
@@ -41,6 +41,28 @@ export function Legend() {
           }}
         />
         <span style={{ color: "#555" }}>Planned</span>
+      </div>
+      <div
+        style={{
+          borderTop: "1px solid #e5e7eb",
+          paddingTop: 6,
+          marginTop: 2,
+        }}
+      >
+        <div style={{ fontWeight: 600, marginBottom: 6, color: "#333" }}>
+          Railway
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <div
+            style={{
+              width: 24,
+              height: 3,
+              backgroundImage:
+                "repeating-linear-gradient(90deg, #3b82f6 0, #3b82f6 6px, transparent 6px, transparent 8px, #3b82f6 8px, #3b82f6 10px, transparent 10px, transparent 14px)",
+            }}
+          />
+          <span style={{ color: "#555" }}>Under Construction</span>
+        </div>
       </div>
     </div>
   );

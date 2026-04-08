@@ -5,12 +5,13 @@ export interface LatLng {
 
 export interface RingRoad {
   id: string;
+  category: "ring_road" | "railway";
   name: string;
   nameVi: string;
-  status: "completed" | "in_progress" | "planned";
+  status: "completed" | "in_progress" | "planned" | "under_construction";
   color: string;
   strokeWeight: number;
-  strokePattern: "solid" | "dashed" | "dotted";
+  strokePattern: "solid" | "dashed" | "dotted" | "dash_dot";
   length: string;
   districts: string[];
   keyStreets: string[];

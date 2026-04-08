@@ -40,6 +40,25 @@ function getStrokePattern(
       },
     ];
   }
+  if (pattern === "dash_dot") {
+    return [
+      {
+        icon: { path: "M 0,-1 0,1", strokeOpacity: 1, scale: 3 },
+        offset: "0",
+        repeat: "24px",
+      },
+      {
+        icon: {
+          path: maps.SymbolPath.CIRCLE,
+          fillOpacity: 1,
+          strokeOpacity: 0,
+          scale: 2,
+        },
+        offset: "16px",
+        repeat: "24px",
+      },
+    ];
+  }
   return undefined;
 }
 

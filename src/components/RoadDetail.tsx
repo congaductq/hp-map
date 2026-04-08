@@ -10,6 +10,7 @@ const statusLabels: Record<string, string> = {
   completed: "Completed",
   in_progress: "In Progress",
   planned: "Planned",
+  under_construction: "Under Construction",
 };
 
 export function RoadDetail({ roadId, onSelect }: Props) {
