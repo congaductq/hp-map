@@ -1,0 +1,170 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.map-container {
+  flex: 7;
+  position: relative;
+}
+
+.info-panel {
+  flex: 3;
+  background: #fafafa;
+  border-left: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+.info-panel-header {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-panel-header h2 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.info-panel-header p {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.completed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.in_progress {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.planned {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.road-summary-item {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.road-summary-item:hover {
+  background: #f0f0f0;
+}
+
+.road-summary-item h3 {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.road-summary-item p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.detail-section {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-section h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.detail-section p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.detail-row .label {
+  color: #888;
+}
+
+.detail-row .value {
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+}
+
+.street-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.street-list li {
+  font-size: 12px;
+  color: #555;
+  padding: 2px 0;
+}
+
+.street-list li::before {
+  content: "•";
+  color: #ccc;
+  margin-right: 6px;
+}
+
+.marker-fields {
+  margin-top: 8px;
+}
+
+.marker-field {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.marker-field .field-key {
+  color: #888;
+}
+
+.marker-field .field-value {
+  color: #333;
+  font-weight: 500;
+}
